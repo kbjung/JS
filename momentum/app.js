@@ -1,12 +1,11 @@
-//boolean
-    // 참, 거짓
-const amIFat = true;
-console.log(amIFat);
+const dayOfWeek = ["mon" , "tue" , "wed" , "thu" , "fri" , "sat"];
 
-// null : 아무 것도 없다.
-const amIFat2 = null;
-console.log(amIFat2);
+console.log(dayOfWeek[4]);
+console.log(dayOfWeek);
 
-// undefined
-let something;
-console.log(something);
+dayOfWeek.push("sun");
+console.log(dayOfWeek);
+
+const toBuy = ['potato', 'tomato', 'pizza'];
+toBuy.push('kimbab');
+console.log(toBuy[5]);
