@@ -1,33 +1,17 @@
-const age = 80;
+const age = parseInt( prompt("How old are you?") );
 
-function calculatorAgeOfKr(age) {
-    return age + 2;
-};
-
-const krAge = calculatorAgeOfKr(age);
-console.log(krAge);
-
-const calculator = {
-    plus:function(a, b) {
-        return a + b;
-    },
-    minus:function(a, b) {
-        return a - b;
-    },
-    times:function(a, b) {
-        return a * b;
-    },
-    divide:function(a, b) {
-        return a / b;
-    },
-    power:function(a, b) {
-        return a ** b;
-    },
+if(isNaN(age) || age < 0){
+    console.log("Please write a real positive number");
+} 
+else if(age < 18) {
+    console.log("You are too young to drink");
 }
-
-const plusResult = calculator.plus(3, 5);
-const minusResult = calculator.minus(plusResult, 6);
-const timesResult = calculator.times(minusResult, 5);
-const divideResult = calculator.divide(timesResult, 2);
-const powerResult = calculator.power(divideResult, 3);
-console.log(powerResult);
+else if(age >= 18 && age <=50) {
+    console.log("You can drink");
+}
+else if(age > 50 && age <= 80) {
+    console.log("You should exercise");
+}
+else if(age > 80) {
+    console.log("You can do whatever you want");
+}
